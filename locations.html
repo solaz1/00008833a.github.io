@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="locations.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="animation/animate.min.css">
+    <title>Fast-Food ordering service</title>
+  </head>
+  <body>
+
+
+<div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="#" class="navbar-brand">Pizza Ranch Restaurant</a>
+    
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li class="locations"><a href="locations">Locations</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end navigation -->
+<div class="map" id="map">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<h1>Our Locations in Iowa State</h1>
+<img src="map.png">
+</div>
+</div>
+</div>
+</div>
+
+
+
+  <h1 class="list-heading">See the complete list</h1>
+<div id="musiclibrary">
+<input class="search" placeholder="Search" />
+  <table>
+    <thead>
+      <th class="artist">
+        <button class="sort" data-sort="artist">Name</button>
+      </th>
+      <th class="album">
+        <button class="sort" data-sort="album">Phone</button>
+      </th>
+      <th class="track">
+        <button class="sort" data-sort="track">Address</button>
+      </th>
+      <th class="license">
+        <button>Index</button>
+      </th>
+    </thead>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+      <tr>
+        <td>Ackley</td>
+        <td>641-847-2244</td>
+        <td>634 Main St Ackley</td>
+        <td>IA 50601</td>
+       </tr>
+      
+      <tr>
+        <td>Akron</td>
+        <td>712-568-3506</td>
+        <td>223 Reed St. Akron</td>
+        <td>IA 51001</td>
+      </tr>
+
+      <tr>
+        <td>Algona</td>
+        <td>515-295-6995</td>
+        <td>1325 Hwy 169 North Algona</td>
+        <td>IA 50511</td>
+      </tr>
+      
+      <tr>
+        <td>Altoona</td>
+        <td>515-967-8800</td>
+        <td>465 Center Place SW Altoona</td>
+        <td>IA 50009</td>
+      </tr>
+      
+      <tr>
+        <td>Ames</td>
+        <td>515-232-1999</td>
+        <td>1404 Boston Avenue Ames</td>
+        <td>IA 50010</td>
+      </tr>
+      
+      <tr>
+        <td>Ankeny</td>
+        <td>515-964-9990</td>
+        <td>201 SE Oralabor Road Ankeny</td>
+        <td>IA 50021</td>
+      </tr>
+      
+      
+      <tr>
+        <td>Bettendorf</td>
+        <td>563-355-9400</td>
+        <td>880 Lincoln Road Bettendorf</td>
+        <td>IA 52722</td>
+      </tr>
+      
+      <tr>
+        <td>Burlington</td>
+        <td>319-754-5555</td>
+        <td>233 Legacy Drive Burlington</td>
+        <td>IA 52601</td>
+      </tr>
+      
+      <tr>
+        <td>Carroll</td>
+        <td>712-792-3456</td>
+        <td>425 US Highway 30 West Suite 130 Carroll</td>
+        <td>IA 51401</td>
+      </tr>
+      
+      <tr>
+        <td>Cedar Falls</td>
+        <td>319-266-2555</td>
+        <td>4302 University Avenue SUITE B Cedar Falls</td>
+        <td>IA 50613</td>
+      </tr>
+      
+      <tr>
+        <td>Decorah</td>
+        <td>563-382-8744</td>
+        <td>212 College Dr. Decorah</td>
+        <td>IA 52101</td>
+      </tr>
+      
+      <tr>
+        <td>Denison</td>
+        <td>712-393-3333</td>
+        <td>510 N Hwy 39 Denison</td>
+        <td>IA 51442</td>
+      </tr>
+
+      <tr>
+        <td>Eldora</td>
+        <td>641-858-2323</td>
+        <td>1914 Edgington Ave. Eldora</td>
+        <td>IA 50627</td>
+      </tr>
+      
+      <tr>
+        <td>Emmetsburg</td>
+        <td>712-852-2222</td>
+        <td>2120 11th St. Emmetsburg</td>
+        <td>IA 50536</td>
+      </tr>
+      
+      <tr>
+        <td>Fairfield</td>
+        <td>641-472-0123</td>
+        <td>1103 West Burlington Ave Fairfield</td>
+        <td>IA 52556</td>
+      </tr>
+      
+      <tr>
+        <td>Fort Dodge</td>
+        <td>515-955-5599</td>
+        <td>3311 5th Ave South Fort Dodge</td>
+        <td>IA 50501</td>
+      </tr>
+      
+      <tr>
+        <td>George</td>
+        <td>712-475-2865</td>
+        <td>108 E Michigan Ave. George</td>
+        <td>IA 51237</td>
+      </tr>
+      
+      <tr>
+        <td>Grinnell</td>
+        <td>641-260-8020</td>
+        <td>613 West Street S Grinnell</td>
+        <td>IA 50112</td>
+      </tr>
+      
+      <tr>
+        <td>Harlan</td>
+        <td>712-755-2262</td>
+        <td>613 Court St Harlan</td>
+        <td>IA 51537</td>
+      </tr>
+      
+      <tr>
+        <td>Hull</td>
+        <td>712-439-1853</td>
+        <td>1015 Main St. Hull</td>
+        <td>IA 51239</td>
+      </tr>
+      
+      <tr>
+        <td>Independence</td>
+        <td>319-334-9000</td>
+        <td>1900 1st Street West Independence</td>
+        <td>IA 50644</td>
+      </tr>
+      
+      <tr>
+        <td>Indianola</td>
+        <td>515-961-7492</td>
+        <td>1709 N Jefferson Way SUITE 1000 Indianola</td>
+        <td>IA 50125</td>
+      </tr>
+      
+      <tr>
+        <td>Iowa City</td>
+        <td>319-337-6800</td>
+        <td>1610 Sycamore Street Iowa City</td>
+        <td>IA 52240</td>
+      </tr>
+      
+      <tr>
+        <td>Iowa Falls</td>
+        <td>641-648-3322</td>
+        <td>706 Washington Ave. Iowa Falls</td>
+        <td>IA 50126</td>
+      </tr>
+      
+      <tr>
+        <td>Laurens</td>
+        <td>712-841-2658</td>
+        <td>130 N 3rd St. Laurens</td>
+        <td>IA 50554</td>
+      </tr>
+      
+      <tr>
+        <td>Le Mars</td>
+        <td>712-546-7272</td>
+        <td>11 Central Ave SW Le Mars</td>
+        <td>IA 51031</td>
+      </tr>
+      
+      <tr>
+        <td>Manchester</td>
+        <td>563-927-4600</td>
+        <td>1100 West Main Street Manchester</td>
+        <td>IA 52057</td>
+      </tr>
+      
+      <tr>
+        <td>Marcus</td>
+        <td>712-376-2168</td>
+        <td>109 N Main St Marcus</td>
+        <td>IA 51035</td>
+      </tr>
+      
+      <tr>
+        <td>Newton</td>
+        <td>641-792-3447</td>
+        <td>1500 W 18th Street S. Newton</td>
+        <td>IA 50208</td>
+      </tr>
+      
+      <tr>
+        <td>North Liberty</td>
+        <td>319-626-7999</td>
+        <td>395 Beaver Kreek Centre North Liberty</td>
+        <td>IA 52317</td>
+      </tr>
+      
+      <tr>
+        <td>Oelwein</td>
+        <td>319-283-5858</td>
+        <td>125 1st Avenue SE Oelwein</td>
+        <td>IA 50662</td>
+      </tr>
+      
+      <tr>
+        <td>Ottumwa</td>
+        <td>641-684-0800</td>
+        <td>1791 Venture Drive Ottumwa</td>
+        <td>IA 52501</td>
+      </tr>
+      
+      <tr>
+        <td>Pella</td>
+        <td>641-628-8844</td>
+        <td>508 Main St Pella</td>
+        <td>IA 50219</td>
+      </tr>
+      
+      <tr>
+        <td>Red Oak</td>
+        <td>712-623-2332</td>
+        <td>1511 N Broadway St Red Oak</td>
+        <td>IA 51566</td>
+      </tr>
+
+      <tr>
+        <td>Sanborn</td>
+        <td>712-729-5402</td>
+        <td>107 W 7th St. Sanborn</td>
+        <td>IA 51248</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script type="text/javascript" src="list.js"></script>
+
+
+
+
+
+
+<!-- Footer -->
+<div id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <h4>Contact Us</h4>
+        <p><i class="fa fa-home" aria-hidden="true"></i> 1610 Sycamore Street, Iowa City, IA 52240</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> pizzaranch@gmail.com</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> (319) 337-6800</p>
+        <p><i class="fa fa-globe" aria-hidden="true"></i> www.pizzaranch.com</p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <h4>About</h4>
+        <p><i class="fa fa-square-o" aria-hidden="true"></i> About Us</p>
+        <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacy</p>
+        <p><i class="fa fa-square-o" aria-hidden="true"></i> Terms&Conditions</p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+         <h4>Stay in Touch</h4>
+         <a href="https://facebook.com"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+         <a href="https://twitter.com"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
+         <a href="https://linkedin.com"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://pinterest.com"><i class="social fa fa-pinterest" aria-hidden="true"></i></a>
+         <a href="https://youtube.com"><i class="social fa fa-youtube" aria-hidden="true"></i></a>
+         <a href="https://github.com"><i class="social fa fa-github" aria-hidden="true"></i></a><br>
+         <input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>
+         <p> This web site was created to fulﬁll Web Technologies module’s requirements and does not represent actual company or service.</p>
+         <a href="00008833.pdf">You can download the report of the website here</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script type="text/javascript" src="list.js"></script>
+  
+
+  </body>
+</html>
